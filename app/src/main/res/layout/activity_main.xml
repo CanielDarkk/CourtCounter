@@ -25,20 +25,16 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1 Points"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="2 Points"
         />
 
     <Button
+        android:id="@+id/addThreePoints"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="3 Points"
+        android:onClick="addThreeForTeamA"
         />
 
     <Button
