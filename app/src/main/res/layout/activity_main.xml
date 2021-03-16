@@ -25,7 +25,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2 Points"
+        android:text="+2 Points"
+        android:onClick="addTwoForTeamA"
         />
 
     <Button
@@ -42,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="Free Throw"
+        android:onClick="addOneForTeamA"
         />
 
 </LinearLayout>
