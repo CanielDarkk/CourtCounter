@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    /*
+    Declare & Initialize Global Variables Here
+     */
+    int scoreTeamA = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds won point
+     * Adds one point
      */
     public void addOneForTeamA(View v) {
         displayForTeamA(1);
