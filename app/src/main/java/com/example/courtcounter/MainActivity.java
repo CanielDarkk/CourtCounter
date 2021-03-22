@@ -24,21 +24,24 @@ public class MainActivity extends AppCompatActivity {
      * Adds three points
      */
     public void addThreeForTeamA(View v) {
-        displayForTeamA(3);
+        scoreTeamA = scoreTeamA +3;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      * Adds two points
      */
     public void addTwoForTeamA(View v) {
-        displayForTeamA(2);
+        scoreTeamA = scoreTeamA +2;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      * Adds one point
      */
     public void addOneForTeamA(View v) {
-        displayForTeamA(1);
+        scoreTeamA = scoreTeamA +1;
+        displayForTeamA(scoreTeamA);
     }
 
 
