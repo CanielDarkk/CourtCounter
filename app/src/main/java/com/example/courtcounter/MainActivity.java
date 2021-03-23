@@ -21,12 +21,9 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(0);
     }
 
-
      /*
     These Methods are for Team A
      */
-
-
 
     /**
      *
@@ -55,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
     }
 
-
     /**
      * Displays the given score for Team A.
      */
@@ -63,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
-
-
 
     /*
     These Methods are for Team B
