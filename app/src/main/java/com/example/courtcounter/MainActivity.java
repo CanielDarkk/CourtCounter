@@ -3,14 +3,16 @@ package com.example.courtcounter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*
-     Declare and Initialize Global Variable Here
+    /**
+     * Declare & Initialize Global Variables Here
      */
+
     int scoreTeamA = 0;
     int scoreTeamB = 0;
 
@@ -18,38 +20,38 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(0);
     }
 
-     /*
-    These Methods are for Team A
+    /*
+     * These Methods are for Team A
      */
 
     /**
-     *
-     * Adds Three Points for Team A
+     * Adds three points for Team A
      */
-
-    public void addThreeForTeamA(View v){
+    public void addThreeForTeamA(View v) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
+
     }
 
+
     /**
-     *
-     * Adds Two Points for Team A
+     * Adds two points for Team A
      */
     public void addTwoForTeamA(View v) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
+
     }
+
     /**
-     *
-     * Adds One Point for Team A
+     * Adds one point for Team A
      */
-    public void addOneForTeamA(View v){
+    public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
+
     }
 
     /**
@@ -61,56 +63,53 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    These Methods are for Team B
+     * These Methods are for Team B
      */
-    /*
-    Resets the score for both teams back to 0.
-     */
-    public void resetScore(View v) {
-         scoreTeamA = 0;
-         scoreTeamB = 0;
-         displayForTeamA(0);
-         displayForTeamB(0);
-    }
 
     /**
-     *
-     * Adds Three Points for Team B
+     * Adds three points for Team B
      */
-
-    public void addThreeForTeamB(View v){
+    public void addThreeForTeamB(View v) {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
+
     }
 
+
     /**
-     *
-     * Adds Two Points for Team B
+     * Adds two points for Team B
      */
     public void addTwoForTeamB(View v) {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
+
     }
+
     /**
-     *
-     * Adds One Point for Team B
+     * Adds one point for Team B
      */
-    public void addOneForTeamB(View v){
+    public void addOneForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
+
     }
 
-
     /**
-     * Displays the given score for Team B.
+     * Displays the given score for Team B
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
-
-
-
+    /**
+     * Resets the score for both teams back to 0.
+     */
+    public void resetScore(View v) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
 
 }
